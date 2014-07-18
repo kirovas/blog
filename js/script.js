@@ -21,4 +21,7 @@ $('.flexhd').flexslider({
   $('.flexreview').flexslider({
     animation: "slide"
   });
+  $('.flext-r').flexslider({
+    animation: "slide"
+  });
 });
