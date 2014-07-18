@@ -109,6 +109,27 @@ left: 0px;
 
 width: 100%;
 }
+.caption{
+	position:relative;
+	width:960px;
+	margin:0px auto;
+	text-align: center;
+	top:310px;
+}
+.caption p{
+	font-size:30px;
+	color:#fff;
+	font-family: 'Open Sans', sans-serif;
+}
+.caption p span{
+	display:block;
+	font-size:60px;
+	text-transform:uppercase;
+}
+.caption .slider-ship img {
+display: block!important;
+width: 120px;
+}
 header.home{
 	position:relative;
 	z-index:1;
@@ -364,6 +385,45 @@ padding: 0;
 }
 .flexhd img{
 	border-radius:10px;
+}
+.flexhd .flex-viewport .slides li{
+	float:left!important;
+}
+.hot-d-cap{
+	position:absolute;
+	width:270px;
+	height: 100%;
+	padding:55px 0px 55px 55px;
+	top:0px;
+	color:#fff;
+}
+.hot-d-cap .offer{
+	display:inline-block;
+	font-size:12px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
+	background:#60ad4c;
+	line-height:26px;
+	text-align:center;
+	padding:0px 16px;
+	border-radius:10px;
+	color:#fff;
+	text-decoration:none;
+}
+.hot-d-cap h3{
+	color:#fff;
+	font-size:26px;
+	margin-bottom:18px;
+	margin-top:25px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+}
+.hot-d-cap p{
+	font-size:11px;
+	line-height:20px;
+}
+.hot-d-cap .block-text-bottom span.price, .hot-d-cap .block-text-bottom span.date{
+	color:#fff;
 }
 .hd-right{
 	float:left;
