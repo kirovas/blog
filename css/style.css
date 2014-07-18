@@ -177,6 +177,9 @@ margin-top: 20px;
 .contacts span:first-child{
 	margin-right:25px;
 }
+.contacts span i{
+	margin-right:8px;
+}
 nav.main-nav{
 	height:47px;
 	background:#fff;
