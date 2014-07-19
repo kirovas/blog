@@ -33,11 +33,12 @@ $(document).ready(function(){
 	show_title: true, /* true/false */
 	});
   });
-/*$(window).load(function(){
-  var $container = $('.gallery-item');
+$(window).load(function(){
+  var $container = $('.gw');
 // init
 $container.isotope({
   // options
   itemSelector: '.gal',
   layoutMode: 'masonry'
-});*/
+});
+});
