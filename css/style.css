@@ -628,6 +628,36 @@ padding: 0;
 	padding-bottom:70px;
 	background:url(../images/gallery.png)no-repeat center top;
 }
+.img-wrap {
+position: relative;
+}
+.img-wrap img{
+max-width:100%;
+margin:0px;
+}
+.cover{
+display:none;
+	background:rgba(92,68,130,0.7);
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	border-radius:10px;
+}
+.cover i{
+	position:relative;
+	top:45%;
+	left:45%;
+}
+.img-wrap a{
+	color: #ADA2BD;
+font-size: 21px;
+	display:block;
+}
+.img-wrap:hover .cover{
+	display:block;
+}
 .flexgallery{
 	position: relative; zoom: 1;
 	margin-top:20px;
