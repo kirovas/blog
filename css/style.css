@@ -1329,6 +1329,10 @@ width:176px;
 	box-shadow:inset 0px 1px 1px rgba(0,0,0,0.3);
 	margin-bottom:20px;
 }
+.form-body input:hover, .form-body input:focus{
+	background:#3a284f;
+	outline:none;
+}
 .form-body textarea{
 	float:left;
 	width:890px;
@@ -1343,6 +1347,10 @@ width:176px;
 	box-shadow:inset 0px 1px 1px rgba(0,0,0,0.3);
 	margin-bottom:20px;
 	
+}
+.form-body textarea:hover, .form-body textarea:focus{
+	background:#3a284f;
+	outline:none;
 }
 .form-body ::-webkit-input-placeholder { /* WebKit browsers */
     color:    #fff;
