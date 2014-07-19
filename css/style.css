@@ -366,16 +366,15 @@ right: 12px;
 	color:#000;
 	background:#ffde1b;
 	line-height:34px;
-	border-width:0px 0px 4px 0px;
-	border-color:#ffc11b;
+	border-width:0px ;
+	box-shadow:inset 0px -3px 0px rgba(0,0,0,0.2);
 	border-radius:8px;
 	padding:0px 30px;
 	float:right;
 	
 }
 .btn-yellow:hover{
-	border-width:4px 0px 0px 0px;
-	border-color:#efb415;
+	box-shadow:inset 0px 3px 0px rgba(0,0,0,0.2);
 	background:#f5d517;
 	
 }
@@ -1306,6 +1305,115 @@ width:176px;
 }
 .pagination .next {
 	margin-left:20px;
+}
+/* BOOKING  */
+.fbw{
+	margin-bottom:45px;
+}
+.form-body{
+	background:#604283;
+	padding:35px 30px 10px;
+	overflow:hidden;
+}
+.form-body input{
+	float:left;
+	width:215px;
+	margin:0px 5px;
+	display:block;
+	padding:15px;
+	color:#fff;
+	font-size:11px;
+	border:none;
+	background:#432e5b;
+	border-radius:5px;
+	box-shadow:inset 0px 1px 1px rgba(0,0,0,0.3);
+	margin-bottom:20px;
+}
+.form-body textarea{
+	float:left;
+	width:890px;
+	margin:0px 5px;
+	display:block;
+	padding:15px;
+	color:#fff;
+	font-size:11px;
+	border:none;
+	background:#432e5b;
+	border-radius:5px;
+	box-shadow:inset 0px 1px 1px rgba(0,0,0,0.3);
+	margin-bottom:20px;
+	
+}
+.form-body ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+}
+.form-body :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+    opacity:  1;
+}
+.form-body ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+    opacity:  1;
+}
+.form-body :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #fff;
+}
+.form-footer{
+	background:#60ad4c;
+	padding:20px 35px;
+	overflow:hidden;
+}
+.form-r{
+	float:right;
+}
+.form-l{
+	float:left;
+	padding: 10px 0px 0px;
+}
+.form-l label {
+	font-size:11px;
+	color:#fff;
+	display:inline-block;
+	vertical-align: top;
+}
+.form-l input[type="checkbox"]{
+	margin-right:10px;
+}
+.btn-book{
+	display:inline-block;
+	font-size:12px;
+	text-transform:uppercase;
+	color:#000;
+	background:#ffde1b;
+	line-height:34px;
+	/*border-width:0px 0px 3px 0px;
+	border-color:#ffc11b;*/
+	box-shadow:inset 0px -3px 0px rgba(0,0,0,0.2);
+	border-radius:3px;
+	padding:0px 20px;
+	border:0px;
+}
+.btn-book:hover{
+	box-shadow:inset 0px 3px 0px rgba(0,0,0,0.2);
+	background:#f5d517;
+}
+.btn-reset{
+	display:inline-block;
+	font-size:12px;
+	text-transform:uppercase;
+	color:#fff;
+	background:#437935;
+	line-height:34px;
+	border-width:0px ;
+	box-shadow:inset 0px -3px 0px rgba(0,0,0,0.2);
+	border-radius:3px;
+	padding:0px 20px;
+}
+.btn-reset:hover{
+	box-shadow:inset 0px 3px 0px rgba(0,0,0,0.2);
+}
+.form-footer .btn-reset{
+	margin-right:10px;
 }
 /* ------------------------- Popups */
  
