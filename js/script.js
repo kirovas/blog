@@ -27,7 +27,7 @@ $('.flexhd').flexslider({
 });
 //// Pretty Photo
 $(document).ready(function(){
-    $("a[rel^='prettyPhoto']").prettyPhoto({
+    $("a.prettyphoto").prettyPhoto({
 	theme: 'dark_rounded', /* light_rounded / dark_rounded / light_square / dark_square / facebook */
 	social_tools:false,
 	show_title: true, /* true/false */
