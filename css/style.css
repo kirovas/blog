@@ -216,7 +216,7 @@ nav.main-nav ul.nav-menu li a{
 nav.main-nav ul.nav-menu li:hover .drop-menu{
 	display:block;
 }
-nav.main-nav ul.nav-menu li:hover:before{
+nav.main-nav ul.nav-menu li:hover:before, nav.main-nav ul.nav-menu li.active:before{
 	content:"";
 	position:absolute;
 	display:block;
@@ -495,9 +495,14 @@ padding: 0;
 }
 .hd-right{
 	float:left;
+	margin-right: -10px;
+margin-left: -10px;
+}
+.hd-right .hd-block{
+	padding: 0px 10px;
 }
 .hd-block{
-	width:225px;
+	width: 240px;
 	float:left;
 	height:350px;
 	position:relative;
@@ -506,7 +511,7 @@ padding: 0;
 	border-radius:10px 10px 0px 0px;
 }
 .hd-block:first-child{
-	margin-right:20px;
+	
 }
 .hd-block-text{
 	padding:30px 20px 25px;
@@ -529,11 +534,11 @@ padding: 0;
 }
 .block-text-bottom span{
 	display:inline-block;
-	vertical-align:bottom;
-	margin-right:18px;
+	vertical-align:middle;
+	margin-right:11px;
 }
 .block-text-bottom span:last-child{
-	margin-right:0px;
+	
 }
 .block-text-bottom span.price{
 	font-size:26px;
@@ -551,13 +556,13 @@ padding: 0;
 	float:left;
 	width:100%;
 	margin-top:20px;
+	margin-right: -10px;
+margin-left: -10px;
 }
 .hd-b .hd-block{
-	margin-right:20px;
+	padding: 0px 10px;
 }
-.hd-b .hd-block:last-child{
-	margin-right:0px;
-}
+
 /* VIDEO */
 .video{
 	background:url(../images/vid-bg.jpg) no-repeat center top;
