@@ -1135,6 +1135,11 @@ footer{
 	float:left;
 	margin:0px 10px;
 }
+.a-block img.rounded{
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+}
 .a-block p{
 	color:#7f7f7f;
 	font-size:12px;
@@ -1255,7 +1260,7 @@ div.data p{
 .tcw-wrap{
 	position:relative;
 	overflow:hidden;
-	margin-bottom:35px;
+	margin-bottom:30px;
 }
 .content-title{
 	float:left;
@@ -1664,6 +1669,100 @@ width:176px;
 }
 .form-footer .btn-reset{
 	margin-right:10px;
+}
+/* CONTACTS */
+.c-wrap{
+	padding:35px 0px;
+	border-top:1px dashed #ccc;
+	overflow:hidden;
+}
+.c-content{
+	float:left;
+	width:635px;
+	margin-right:20px;
+}
+.c-content p{
+	color:#7f7f7f;
+	font-size:12px;
+	line-height:21px;
+
+}
+.c-contact{
+	display:inline-block;
+	margin-right: 60px;
+	margin-top:50px;
+}
+.c-contact:last-child{
+	margin-right:0px;
+}
+.c-contact p{
+	float:left;
+}
+.c-contact p span{
+	display:block;
+	color:#000;
+	font-weight:700;
+	font-size:11px;
+}
+.c-contact p span strong{
+	font-weight:700;
+	font-size:14px;
+}
+.c-icon{
+	float:left;
+	overflow:hidden;
+	color:#604283;
+	font-size: 18px;
+margin-right: 10px;
+}
+.c-form-w{
+	float:left;
+	width:305px;
+	padding:20px 20px;
+	background:#604283;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+}
+.c-form-w h3{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color:#fff;
+	font-weight:700;
+	font-size:18px;
+	margin-bottom:20px;
+}
+.c-form-w input{
+	display:block;
+	height:38px;
+	border:0px;
+	border-radius:5px;
+	width:100%;
+	margin-bottom:10px;
+	padding-left:15px;
+	font-size:11px;
+	font-family: 'Open Sans', sans-serif;
+}
+.c-form-w textarea{
+	padding-left:15px;
+	padding-top:10px;
+	border:0px;
+	border-radius:5px;
+	width:100%;
+	font-size:11px;
+	font-family: 'Open Sans', sans-serif;
+}
+.c-button{
+	margin-top:20px;
+}
+.c-map{
+	height:260px;
+	width:100%;
+	overflow:hidden;
+	margin-bottom:50px;
+}
+#map_canvas {
+height: 260px;
+border-radius: 10px;
 }
 /* ------------------------- Popups */
  
