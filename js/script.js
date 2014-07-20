@@ -26,7 +26,7 @@ $('.flexhd').flexslider({
   });
 });
 //// Pretty Photo
-$(document).ready(function(){
+$(window).load(function(){
     $("a.prettyphoto").prettyPhoto({
 	theme: 'dark_rounded', /* light_rounded / dark_rounded / light_square / dark_square / facebook */
 	social_tools:false,
