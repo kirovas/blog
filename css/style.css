@@ -11,8 +11,8 @@ v1.6.1
 Last Updated: 2010-09-17
 Author: Richard Clark - http://richclarkdesign.com Twitter: @rich_clark
 */
-html,body,body div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{border:0;font-size:100%;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
- 
+html,body,body div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{border:0;font-size:100%;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle;outline:none;}
+ input[type="text"],select{outline:none;}
 /* Minimal base styles
 More Info: https://github.com/paulirish/html5-boilerplate/blob/362d0b7/css/style.css
 */
@@ -246,6 +246,9 @@ margin-left: 8px;
 	padding-top:20px;
 	padding-bottom:20px;
 	z-index:1;
+	border-radius:0px 0px 5px 5px;
+	-webkit-border-radius:0px 0px 5px 5px;
+	-moz-border-radius:0px 0px 5px 5px;
 }
 #drop-menu > li {
 	padding: 0px 18px 0px 25px;
@@ -353,7 +356,7 @@ right: 12px;
 	padding-top:16px;
 }
 .q-search-wrap select{
-	background:#432e5b;
+	background:#432e5b url(../images/select.png)no-repeat right;
 	color:#fff;
 	font-size:12px;
 	height:38px;
@@ -363,9 +366,12 @@ right: 12px;
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
 	border:none;
-	box-shadow:inset 0px 1px 2px rgba(0,0,0,0.5);
+	box-shadow:inset 0px 1px 0px rgba(0,0,0,0.1);
 	margin-right:10px;
 	padding-left:15px;
+	-webkit-appearance: none;
+	position:relative;
+	
 }
 .btn-yellow{
 	display:inline-block;
@@ -510,19 +516,20 @@ padding: 0;
 }
 .hd-right{
 	float:left;
-	margin-right: -10px;
-margin-left: -10px;
+	
 }
-.hd-right .hd-block{
-	padding: 0px 10px;
+.hd-right .hd-block:last-child{
+	margin-right:0px;
 }
 .hd-block{
-	width: 240px;
-	float:left;
-	height:350px;
-	position:relative;
+	width: 225px;
+float: left;
+height: 350px;
+position: relative;
+margin: 10px 20px 10px 0px;
 }
 .hd-block img{
+width:100%;
 	border-radius:10px 10px 0px 0px;
 	-webkit-border-radius:10px 10px 0px 0px;
 	-moz-border-radius:10px 10px 0px 0px;
@@ -537,7 +544,7 @@ margin-left: -10px;
 .hd-block-text h3{
 	color:#151618;
 	font-size:18px;
-	margin-bottom:18px;
+	margin-bottom:10px;
 }
 .hd-block-text p{
 	font-size:11px;
@@ -573,13 +580,15 @@ margin-left: -10px;
 	float:left;
 	width:100%;
 	margin-top:20px;
-	margin-right: -10px;
-margin-left: -10px;
+	
 }
 .hd-b .hd-block{
-	padding: 0px 10px;
+	border-radius: 0px 0px 10px 10px;
+box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
 }
-
+.hd-b .hd-block.last{
+	margin-right:0px;
+}
 /* VIDEO */
 .video{
 	background:url(../images/vid-bg.jpg) no-repeat center top;
@@ -1059,8 +1068,9 @@ footer{
 	color:#fff;
 }
 .column-l i{
-	font-size:13px;
-	margin-right:7px;
+	font-size: 18px;
+margin-right: 7px;
+vertical-align: middle;
 }
 /* ABOUT */
 .about{
