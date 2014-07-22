@@ -17,7 +17,10 @@
 		<script src="js/modernizr.custom.js"></script>
 		<!-- Responsive Tabs JS -->
     <script src="js/jquery.responsiveTabs.js" type="text/javascript"></script>
-		<!--<script src="js/script.js"></script>-->
+	<!-- PRETTY PHOTO -->
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" />
+<script src="js/jquery.prettyPhoto.js" type="text/javascript" ></script>
+		<script src="js/script.js"></script>
 
 	</head>
  
@@ -29,19 +32,20 @@
 				<div class="wither-w">
 					<span class="cloud"><img src="images/cloud.png" alt="" /></span>
 					<span>18°c</span>
-					<select class="w-select">
-						<option>London</option>
-						<option>Paris</option>
-						<option>Kopengagen</option>
-						<option>Berlin</option>
-					</select>
+					<div class="city-wrap"><a href="javascript:void(0)" class="w-select">London <i class="fa fa-angle-down"></i></a>
+						<div class="city-drop">
+						<a href="#">Paris</a>
+						<a href="#">Kopengagen</a>
+						<a href="#">Berlin</a>
+						</div>
+					</div>
 				</div>
 				<div class="logo">
 					<a href="#"><img src="images/logo.png" alt="" /></a>
 				</div>
 				<div class="contacts">
 					<span><i class="fa fa-mobile"></i>8 800 346 10 79</span>
-					<span><i class="fa fa-envelope-o"></i>mail@website.com</span>
+					<span><i class="fa fa-envelope"></i>mail@website.com</span>
 				</div>
 			</div>
 			<nav class="main-nav in">
@@ -88,7 +92,7 @@
 	<section class="video">
 	<div class="container">
 		<div class="video-wrap">
-			<iframe width="560" height="315" src="http://www.youtube.com/embed/BV9RmznpqjY" allowfullscreen></iframe>
+			<a href="http://www.youtube.com/watch?v=BV9RmznpqjY" class="prettyphoto" title="video" ><img src="images/vidio-img.png" alt="" /></a>
 		</div>
 		<div class="vid-text">
 			<h3>Lorem Ipsum is simply dummy text of the

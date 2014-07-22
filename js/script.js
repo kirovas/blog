@@ -8,6 +8,7 @@ $(window).load(function() {
                     $('.info').html('Tab <strong>' + tab.id + '</strong> activated!');
                 }
             });
+
 ////hot deals slider left
 $('.flexhd').flexslider({
     animation: "slide"
@@ -40,5 +41,10 @@ $container.isotope({
   // options
   itemSelector: '.gal',
   layoutMode: 'masonry'
+});
+});
+$(document).ready(function(){
+$('.wither-w a.w-select').bind("click", function(e){ 
+	$('.city-drop').fadeToggle();
 });
 });
